@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine Envelope</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #fce4ec;
+    }
+
+    .envelope {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background-color: #fff;
+      border: 2px solid #e91e63;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .flap {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 40px;
+      background-color: #fff;
+      border-top: 2px solid #e91e63;
+      border-radius: 0 0 10px 10px;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .heart {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2em;
+      color: #e91e63;
+      visibility: hidden;
+    }
+
+    .hidden-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      visibility: hidden;
+      background-color: #e91e63;
+      border-radius: 10%;
+    }
+  </style>
+</head>
+<body>
+  <div class="envelope" id="envelope">
+    <div class="flap" id="flap"></div>
+    <div class="heart" id="heart">❤️</div>
+    <div class="hidden-content" id="hiddenContent">
+      <p>Happy Valentine!</p>
+      <p>Silahkan tekan <a href="nextpage.html">di sini</a> untuk melanjutkan.</p>
+    </div>
+  </div>
+  <script>
+    const envelope = document.getElementById('envelope');
+    const flap = document.getElementById('flap');
+    const heart = document.getElementById('heart');
+    const hiddenContent = document.getElementById('hiddenContent');
+    let flapOpen = false;
+
+    envelope.addEventListener('click', () => {
+      if (!flapOpen) {
+        flap.style.transform = 'translateX(-50%) rotateX(90deg)';
+        heart.style.visibility = 'hidden';
+        hiddenContent.style.visibility = 'visible';
+        flapOpen = true;
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.box {
+      display: none;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 10px;
+      width: auto;
+      text-align: center;
+      animation: scaleIn 0.5s ease-in-out; /* Animasi dari kanan ke kiri */
+      background-color: #ee5789;
+    }
+
+    @keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

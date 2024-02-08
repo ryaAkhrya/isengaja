@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('pink.jpg');
+            /* Ganti 'background-image.jpg' dengan path gambar Anda */
+            background-size: cover;
+            /* Mengecilkan atau memperbesar gambar sehingga sesuai dengan ukuran body */
+            background-position: center;
+            /* Posisi gambar di tengah-tengah halaman */
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            width: auto;
+            text-align: center;
+            animation: scaleIn 0.5s ease-in-out;
+            background-color: #ee5789;
+            border-radius: 38px;
+        }
+
+        .arrowButton {
+            margin-top: 10px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #be3b7d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .tulisandesk {
+            color: white;
+        }
+
+
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        #musicPlayerContainer {
+            position: fixed;
+            bottom: 20px;
+            text-align: center;
+
+        }
+
+        #musicTitle {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #333;
+            /* Sesuaikan warna dengan kebutuhan Anda */
+            background-color: #ee5789;
+            border-radius: 5px;
+            color: white;
+        }
+
+        p {
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div id="box1" class="box">
+            <div class="tulisandesk">
+                <p>Haloooo! Dian ya? kalo Dian coba di next
+                </p>
+            </div>
+            <button class="arrowButton" id="nextButton">→</button>
+        </div>
+        <div id="box2" class="box">
+            <div class="tulisandesk">
+                <p>Eh tapi sebelumnya tau ga si hari ini hari apa?
+                    <br>
+                    <br>
+                    ya tau lah hari valentine wakkakak
+                </p>
+            </div>
+            <button class="arrowButton" id="prevButton">←</button>
+            <button class="arrowButton" id="nextButton">→</button>
+        </div>
+        <div id="box3" class="box">
+            <div class="tulisandesk">
+                <p>Hari ini mungkin gw ga ngasih apa apa buat lu. Tapi sebagai rasa sayang gw ke lu, gw bakal ngasihin
+                    web sederhana yang udah gw bikin ini.
+                    <br>
+                    <br>
+                    Gw tau website yang gw bikin ini ga begitu bagus, tapi semoga aja lu suka liatnya (harus suka)
+                    soalnya ini teh udah make pink pink lucuu.
+                    <br>
+                    <br>
+                     Sebelum lu baca ini, lu harus play dulu lagu yang dibawah
+                    (btw gw baru nemu tuh cara nambahin fitur musik haha). Kalo udah play lagunya, silahkan di next..
+                </p>
+            </div>
+            <button class="arrowButton" id="prevButton">←</button>
+            <button class="arrowButton" id="nextButton">→</button>
+        </div>
+        <div id="box4" class="box">
+            <div class="tulisandesk">
+                <p>Halo, di hari valentine ini gw pengen banget ngasitau ke lu kalo gw bener bener sayang sama lu. ga
+                    cuma itu, gw juga mau ngasitau betapa lucunya lu karena udah hadir di hidup gw.
+                    <br>
+                    <br>
+                     Gw berterimakasih banget sama lu, karena dengan adanya lu hadir di hidup gw ini, gw jadi semangat banget ngelakuin hal apapun.
+                    <br>
+                <br>
+            Contohnya nih misal gw lagi badmood. Terus tiba tiba lu ngechat gw, itu badmood gw bisa berkurang banyak banget wkwkwk</p>
+            </div>
+            <button class="arrowButton" id="prevButton">←</button>
+            <button class="arrowButton" id="nextButton">→</button>
+        </div>
+        <div id="box5" class="box">
+            <div class="tulisandesk">
+                <p>Gw ituu sayang banget sama luu tau, soalnya lu bener bener lucu. Mulai dari awal lu berani ngechat gw dan sampe akhirnya gw nyaman sama lu sekarang ini.
+                    <br>
+                    <br>
+                     Oiya, yang bikin gw suka sama lu itu adalah sifat asiknya lu. Kayak, lu tuh bisa gitu ngomong banyak banget tanpa malu malu, apalagi sekarang mah suka ngepap yang random random wkwk.
+                    <br>
+                    <br>
+                    Sebenernya gw juga gatau si kenapa kalo ngeliat lu itu rasanya DEG DEG AN BANGET. Gw juga ngerasa kobisa ya lu suka sama gw, padahal kan banyak yang lebih dari gw gitu.
+                    </p>
+            </div>
+            <button class="arrowButton" id="prevButton">←</button>
+            <button class="arrowButton" id="nextButton">→</button>
+        </div>
+        <div id="box5" class="box">
+            <div class="tulisandesk">
+                <p>7 Alasan mengapa Dian sangat lucu:
+                    <br>
+                    <br>
+                    <br>
+                    1. Dian sangat random
+                    <br>
+                    <br>
+                    2. Dian pinter nyanyi
+                    <br>
+                    <br>
+                    3. Dian kalo cerita itu pasti panjang
+                    <br>
+                    <br>
+                    4. Dian bucin (kaget banget)
+                    <br>
+                    <br>
+                    5. Dian keliatan jutek di real life (omggggg)
+                    <br>
+                    <br>
+                    6. SUARANYAAA LUCUUUUUU
+                    <br>
+                    <br>
+                    7. Dian suka pap dan ngirim vid secara tiba tiba
+                    <br>
+                    <br>
+                    8. Dian cegil omg omg
+                </p>
+            </div>
+            <button class="arrowButton" id="prevButton">←</button>
+            <button class="arrowButton" id="nextButton">→</button>
+    </div>
+    <div id="box5" class="box">
+        <div class="tulisandesk">
+            <p>
+                Top 5 Foto ter gemesnya Dian
+                <br>
+                <br>
+                <img src="1.jpg" style="width: 20%; height: 20%;">
+                <img src="2.jpg" style="width: 20%; height: 20%;">
+                <img src="3.jpg" style="width: 15%; height: 15%;">
+                <img src="4.jpg" style="width: 16%; height: 16%;">
+                <img src="5.jpg" style="width: 16%; height: 16%;">
+            </p>
+        </div>
+        <button class="arrowButton" id="prevButton">←</button>
+        <button class="arrowButton" id="nextButton">→</button>
+</div>
+    </div>
+
+    <!-- icon lagu -->
+    <div id="musicPlayerContainer">
+        <p id="musicTitle">Bad - Wave to earth </p>
+        <audio id="musicPlayer" controls>
+            <source src="bad.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const boxes = document.querySelectorAll('.box');
+            const prevButtons = document.querySelectorAll('#prevButton');
+            const nextButtons = document.querySelectorAll('#nextButton');
+
+            let currentBox = 0;
+
+            function showBox(index) {
+                boxes[index].style.display = 'block';
+            }
+
+            function hideBox(index) {
+                boxes[index].style.display = 'none';
+            }
+
+            function prevButtonClickHandler() {
+                hideBox(currentBox);
+                currentBox = (currentBox - 1 + boxes.length) % boxes.length;
+                showBox(currentBox);
+            }
+
+            function nextButtonClickHandler() {
+                hideBox(currentBox);
+                currentBox = (currentBox + 1) % boxes.length;
+                showBox(currentBox);
+            }
+
+            prevButtons.forEach(button => {
+                button.addEventListener('click', prevButtonClickHandler);
+            });
+
+            nextButtons.forEach(button => {
+                button.addEventListener('click', nextButtonClickHandler);
+            });
+
+
+            // Show the first box initially
+            showBox(currentBox);
+        });
+    </script>
+
+</body>
+
+</html>
